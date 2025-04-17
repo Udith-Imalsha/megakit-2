@@ -432,6 +432,20 @@ a:focus {
   font-size: 16px;
 }
 
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Adjust background color as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+body {
+  padding-top: 80px; /* Adjust padding to prevent content overlap with the fixed header */
+}
+
 .header-top .header-top-info {
   color: #919194;
   font-size: 16px;
@@ -509,9 +523,8 @@ ul.dropdown-menu li {
 }
 
 .slider {
-  background: url("../images/bg/4.jpg") no-repeat;
+  background: url("../images/bg/4.jpg") no-repeat 50% 50%;
   background-size: cover;
-  background-position: 10% 0%;
   padding: 200px 0 280px 0;
   position: relative;
 }
